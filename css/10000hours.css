@@ -44,11 +44,18 @@ body {
     color: #fff;
 }
 
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'GmarketSansMedium';
+}
+
 /* 타이틀 */
 .tit-timelaw {
     width: 564px;
     height: 250px;
-    margin: 140px auto 66px;
+    margin: 140px 0 66px;
     background-image: url("../img/clock.png");
     background-repeat: no-repeat;
     background-position: center center;
@@ -63,21 +70,20 @@ body {
 /* 연습은 어제의 당신보다 당신을 더 낫게 만든다. */
 .img-txt {
     display: block;
-    margin: 0 auto 78px;
+    margin-bottom: 78px;
 }
 
 /* 따옴표 */
 .txt-desc {
-    font-family: 'GmarketSansMedium';
     width: 490px;
-    margin: 0 auto 70px;
-    text-align: center;
+    margin-bottom: 70px;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
+    text-align: center;
     background-image: url('../img/quotes.png');
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: top;
 }
 
 .txt-desc .tit-desc{
@@ -90,11 +96,18 @@ body {
 .cont-inp {
     position: relative;
     width: 765px;
-    margin: 0 auto 147px;
-    font-family: 'GmarketSansMedium';
+    margin-bottom: 147px;
     font-size: 24px;
     line-height: 24px;
     text-align: center;
+}
+
+.btn-com {
+    border-radius: 56px;
+    background-color: #FCEE21;
+    font-family: 'GmarketSansBold';
+    font-weight: 700;
+    color: #5B2386;
 }
 
 .cont-inp input {
@@ -119,13 +132,6 @@ input::placeholder {
 .cont-inp .btn-exc {
     width: 565px;
     height: 66px;
-    background-color: #FCEE21;
-    font-family: 'GmarketSansBold';
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 24px;
-    color: #5B2386;
-    border-radius: 56px;
 }
 
 .cont-inp .img-click {
@@ -136,9 +142,8 @@ input::placeholder {
 
 /* 결과창 */
 .cont-result {
-    font-family: 'GmarketSansMedium';
     width: 663px;
-    margin: 0 auto 136px;
+    margin-bottom: 136px;
     text-align: center;
     font-size: 24px;
     line-height: 24px;
@@ -163,13 +168,6 @@ input::placeholder {
 .cont-result .btn-go {
     width: 356px;
     height: 66px;
-    background-color: #FCEE21;
-    font-family: 'GmarketSansBold';
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 24px;
-    color: #5B2386;
-    border-radius: 56px;
     margin-right: 18px;
 }
 
@@ -177,18 +175,14 @@ input::placeholder {
     width: 191px;
     height: 66px;
     background-color: #FFFFFF;
-    font-family: 'GmarketSansBold';
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 24px;
-    color: #5B2386;
-    border-radius: 56px;
 }
 
 /* Footer */
 .cont-footer {
-    width: 365px;
-    margin: 0 auto 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 66px;
     text-align: center;
 }
 
@@ -197,6 +191,7 @@ input::placeholder {
 }
 
 .cont-footer .txt-footer {
+    width: 365px;
     font-family: 'Noto Sans KR';
     font-size: 12px;
     line-height: 17.38px;
