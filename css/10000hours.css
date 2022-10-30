@@ -108,17 +108,20 @@ body {
     font-family: 'GmarketSansBold';
     font-weight: 700;
     color: #5B2386;
+    cursor: pointer;
 }
 
 .cont-inp input {
-    width: 228px;
-    height: 57px;
+    width: 188px;
+    height: 27px;
+    padding: 15px 20px;
     border-radius: 7px;
 }
 
 input::placeholder {
     text-align: center;
     color: #BABCBE;
+    font-size: 20px;
 }
 
 .cont-inp .txt-wannabe {
@@ -140,8 +143,35 @@ input::placeholder {
     right: 30px;
 }
 
+/* 로딩되는 시계 */
+.loading-clock {
+    display: none;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 80px;
+}
+
+.loading-clock img {
+    width: 100%;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 /* 결과창 */
 .cont-result {
+    display: none;
     width: 663px;
     margin-bottom: 136px;
     text-align: center;
@@ -198,4 +228,53 @@ input::placeholder {
     font-weight: 400;
 }
 
+/* modal */
+.cont-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* display: flex; */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
 
+.cont-modal .wrap-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.wrap-modal p {
+    font-family: 'OTEnjoystoriesBA';
+    color: #5B2386;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 39.6px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wrap-modal p strong {
+    font-size: 96px;
+    line-height: 105.6px;
+}
+
+.wrap-modal img {
+    width: 340px;
+    height: 280px;
+    margin-bottom: 50px;
+}
+
+.wrap-modal .btn-go2 {
+    padding: 10px 40px;
+    cursor: ponter;
+    box-shadow: 0px 6px 16px 0px rgb(0 0 0 / 15%), 0px 5px 16px 0px rgb(0 0 0 / 15%);
+}

@@ -27,33 +27,36 @@
             <form class="cont-inp">
                 <p class="txt-wannabe">
                     나는
-                    <input type="text" placeholder="예)프로그래밍" required />
+                    <input type="text" class="expert_name" placeholder="예)프로그래밍" required />
                     전문가가 될 것이다
                 </p>
                 <p class="txt-time">
                     그래서 앞으로 매일 하루에
-                    <input type="number" placeholder="예)5시간" required />
+                    <input type="number" class="time" placeholder="예)5시간" required />
                     시간씩 훈련할 것이다.
                 </p>
-                <button class="btn-com btn-exc">
+                <button type="button" class="btn-com btn-exc">
                     나는 며칠 동안 훈련을 해야 1만 시간이 될까?
                 </button>
                 <img src="img/click.png" alt="" class="img-click"/>
             </form>
-            <section id="result" class="cont-result">
+            <div class="loading-clock">
+                <img src="./img/loading.png" alt="">
+            </div>
+            <section class="cont-result">
                 <h2 class="blind">결과 확인</h2>
                 <p class="txt-wannabe">
                     당신은
-                    <strong>프로그래밍</strong>
+                    <strong class="r-expert_name"></strong>
                     전문가가 되기 위해서
                 </p>
                 <p class="txt-time">
                     대략
-                    <strong>5110</strong>
+                    <strong class="r-time"></strong>
                     일 이상 훈련하셔야 합니다! :)
                 </p>
-                <button class="btn-com btn-go">훈련하러 가기 GO!GO!</button>
-                <button class="btn-com btn-share">공유하기</button>
+                <button type="button" class="btn-com btn-go">훈련하러 가기 GO!GO!</button>
+                <button type="button" class="btn-com btn-share">공유하기</button>
             </section>
         </main>
         <footer class="cont-footer">
@@ -63,14 +66,17 @@
                 수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
             </p>
         </footer>
-        <!-- <section class="cont-modal">
-            <h2 class="blind">응원 모달</h2>
-            <p>
-                <strong>화이팅!!♥♥♥</strong><br />
-                당신의 꿈을 응원합니다.
-            </p>
-            <img src="img/licat.png" alt="응원하는 라이켓" />
-            <button class="btn-go">종료하고 진짜 훈련하러 가기 GO!GO!</button>
-        </section> -->
+        <section class="cont-modal">
+            <div class="wrap-modal"> 
+                <h2 class="blind">응원 모달</h2>
+                <p>
+                    <strong>화이팅!!♥♥♥</strong><br />
+                    당신의 꿈을 응원합니다.
+                </p>
+                <img src="img/licat.png" alt="응원하는 라이켓" />
+                <button type="button" class="btn-com btn-go2">종료하고 진짜 훈련하러 가기 GO!GO!</button>
+            </div>
+        </section>
+        <script src="./10000hours.js"></script>
     </body>
 </html>
